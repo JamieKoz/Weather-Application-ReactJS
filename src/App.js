@@ -1,10 +1,9 @@
 import './App.css';
 
 import { useState } from 'react';
-
 const api = {
- key: "408107a03cf63bd0123bad5e4f7b0d7a",
- base: "https://api.openweathermap.org/data/2.5/"
+ base: "https://api.openweathermap.org/data/2.5/",
+ key: process.env.REACT_APP_API_KEY
 }
 
 let today = new Date().toDateString();
